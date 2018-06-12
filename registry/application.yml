@@ -1,0 +1,11 @@
+spring:
+  application:
+    name: eureka-server-cluster
+  profiles:
+    active: peer3
+security:
+  basic:
+    enabled: true
+  user:
+    name: sunshb #用户名
+    password: 123456 #密码
