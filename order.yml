@@ -1,0 +1,22 @@
+eureka:
+  client:
+    serviceUrl:
+      defaultZone: http://sunshb:123456@peer1:8100/eureka,http://sunshb:123456@peer2:8200/eureka,http://sunshb:123456@peer3:8300/eureka
+spring:
+  application:
+    name: config
+  cloud:
+    config:
+      server:
+        git:
+          uri: https://github.com/sunshb/SpringCloudDemo/tree/master/registry
+          username: 66522799@qq.com
+          password: Ab781123-
+          #basedir:
+        #native:
+        #  search-locations: classpath:/shared
+
+  profiles:
+     active: native
+server:
+  port: 8888
