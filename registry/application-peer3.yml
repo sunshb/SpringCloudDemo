@@ -1,0 +1,9 @@
+server:
+  port: 8300
+eureka:
+  instance:
+    hostname: peer3
+    instance-id: ${spring.application.name}:${server.port}
+  client:
+    service-url:
+      defaultZone: http://sunshb:123456@peer1:8100/eureka,http://sunshb:123456@peer2:8200/eureka
